@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: 40px;
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+.home {
+    min-height: 300px;
+    background-image: url('../images/canva.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home h1,
+p {
+    /* color: white; */
+    font-family: "Protest Riot", sans-serif;
+}
+
+.Explore {
+    height: 30px;
+    width: 160px;
+    /* color: white; */
+    border-radius: 8px;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background: transparent;
+    border-color: #ffffff;
+    border-style: double;
+    cursor: pointer;
+}
+
+.Explore:hover {
+    background-color: #ffffff2a;
+    color: black;
+    transition: 0.9s;
+}
+
+
+.swiper-container {
+    width: 100%;
+    padding: 20px;
+    /* background-color: #252525; */
+}
+.swiper-container h3{
+    text-align: center;
+}
+
+.mySwiper {
+    width: 80%;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: red !important;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #007bff;
+}
+
+@media (max-width: 400px) {
+
+    .mySwiper {
+        width: 100%;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+    }
+}
+
+.form form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+.common {
+    padding-top: 80px;
+}
+
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+
+    font-family: 'Ionicons' !important;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    height: 40px;
+}
+
+#otherReason {
+    display: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #005baa;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0370cf;
+}
+
+.success {
+    color: #4caf50;
+}
+
+.error {
+    color: #ff0000;
+}

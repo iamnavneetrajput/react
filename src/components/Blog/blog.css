@@ -1,0 +1,13 @@
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+} 
+
+.blog-details {
+    background-color: aqua;
+    margin: 1em;
+    border-radius: 1em;
+    padding: 1rem;
+}
