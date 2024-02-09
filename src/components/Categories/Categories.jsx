@@ -1,13 +1,27 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode} from '@fortawesome/free-solid-svg-icons';
-const Cateogories = () =>{
+import { Cateogries } from "../../pages/Data";
+import './categories.css'
+import PageTitles from "../../pages/PageTitles";
+const Cateogories = () => {
 
-    return(
+    return (
 
         <>
-
-        
+            <div className='main'>
+                <div className="Cateogories">
+                    <h3> {PageTitles.Cateogories} </h3>
+                    <div className="Cateogories-list">
+                        {Cateogries.map(Cateogories => (
+                            <a key={Cateogories.id} href={Cateogories.link}>
+                                <div key={Cateogories.id} className="Cateogories-div">
+                                    <h2>{Cateogories.name}</h2>
+                                    <p>{Cateogories.Description}</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

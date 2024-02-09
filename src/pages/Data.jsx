@@ -1,50 +1,58 @@
 export const Course = [
     {
         id: 1,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'JavaScript', 
+        Description: "This is a course about the basics of JavaScript", 
         Instructor: "John Doe",
+        link: "#"
     },
     {
         id: 2,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'Test', 
+        Description: "This is a course about the basics of Test", 
         Instructor: "John Doe",
+        link: "#"
     },
     {
         id: 3,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'Python', 
+        Description: "This is a course about the basics of Python", 
         Instructor: "Doe",
+        link: "#"
     },
     {
         id: 4,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'Mongodb', 
+        Description: "This is a course about the basics of Mongodb", 
         Instructor: "John",
+        link: "#"
     },
     {
         id: 4,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'Sql', 
+        Description: "This is a course about the basics of Sql", 
         Instructor: "John",
+        link: "#"
     },
     {
         id: 4,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'Css', 
+        Description: "This is a course about the basics of Css",
         Instructor: "John",
+        link: "#"
     },
     {
         id: 4,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'Node', 
+        Description: "This is a course about the basics of Node", 
         Instructor: "John",
-    },    {
+        link: "#"
+    }, {
         id: 4,
-        CourseName: 'JavaScript', // Use string literals
-        Description:  "This is a course about the basics of JavaScript", // Corrected property name
+        CourseName: 'React', 
+        Description: "This is a course about the basics of React",
         Instructor: "John",
+        link: "#"
     },
 ];
 
@@ -70,5 +78,36 @@ export const PricingData = [
         description: "All Features and All Courses",
         buttonText: "Subscribe",
         buttonLink: "#"
+    }
+];
+
+
+export const Cateogries = [
+    {
+        id: 1,
+        name: "Web Devlopment",
+        Description: "In Computer Science",
+        link:"https://github.com/iamnavneetrajput"
+    },
+
+    {
+        id: 2,
+        name: "Business",
+        Description: "In Business Management",
+        link:"https://github.com/iamnavneetrajput"
+    },
+
+    {
+        id: 3,
+        name: "Finance",
+        Description: "In  Financial Analysis",
+        link:"https://www.google.com"
+    },
+
+    {
+        id: 4,
+        name: "Marketing",
+        Description: "In  Marketing Management",
+        link:"https://github.com/iamnavneetrajput"
     }
 ];

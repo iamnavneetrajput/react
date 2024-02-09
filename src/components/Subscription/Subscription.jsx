@@ -7,11 +7,18 @@ import 'swiper/css/navigation';
 import './subscription.css';
 import { PricingData } from '../../pages/Data';
 import PageTitles from '../../pages/PageTitles';
+import PageHeader from "../PageHeader/PageHeader";
 const Subscription = () => {
     return (
         <div className='main'>
             <div className="swiper-container subscription">
-                <h3> {PageTitles.subscription} </h3>
+                <PageHeader
+                    title="Subscription"
+                    paragraph='Choose Best  Suited Plan for Your Needs'
+                    buttonText='Know your best plan'
+                    className='home-image'
+                />
+
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     pagination={{

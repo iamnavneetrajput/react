@@ -51,7 +51,6 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='main'> 
     <div className="form">
       <form id="contactForm" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -115,7 +114,7 @@ const ContactForm = () => {
         </div>
       </form>
     </div>
-    </div>
+  
   );
 };
 
