@@ -7,7 +7,7 @@ const Cateogories = () => {
     return (
 
         <>
-            <div className='main'>
+          
                 <div className="Cateogories">
                     <h3> {PageTitles.Cateogories} </h3>
                     <div className="Cateogories-list">
@@ -20,7 +20,6 @@ const Cateogories = () => {
                             </a>
                         ))}
                     </div>
-                </div>
             </div>
         </>
     )

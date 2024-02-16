@@ -1,30 +1,29 @@
-import React, { useState } from 'react';
-import './SearchBar.css';
+import React, { useState } from "react";
+import "./SearchBar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = ({ onSearch }) => {
-    const [query, setQuery] = useState('');
+const Search = () => {
+  const [isActive, setIsActive] = useState(false);
 
-    const handleChange = (event) => {
-        setQuery(event.target.value);
-    };
+  const toggleSearch = () => {
+    setIsActive(!isActive);
+  };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        onSearch(query);
-    };
-
-    return (
-        <form onSubmit={handleSubmit} className="search-bar">
-            <input
-                type="text"
-                value={query}
-                onChange={handleChange}
-                placeholder="Search..."
-                className="search-input"
-            />
-            <button type="submit" className="search-button">Search</button>
-        </form>
-    );
+  return (
+    <div className="search-container">
+      <button className="search-button" onClick={toggleSearch}>
+        <FontAwesomeIcon icon={isActive ? faTimes : faSearch} />
+      </button>
+      <input
+        type="text"
+        className={isActive ? "search-input active" : "search-input"}
+        id="searchInput"
+        placeholder="Search..."
+        autoFocus={isActive}
+      />
+    </div>
+  );
 };
 
-export default SearchBar;
+export default Search;

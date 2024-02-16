@@ -1,11 +1,58 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure container takes at least 100% of the viewport height */
-  }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.night-mode {
+  background-color: var(--secondary-color);
+  color: var(--border-color);
+  border-color: var(--border-color);
+
+}
+
+.night-mode .home-image,
+.about-image {
+  background-image: none;
+}
+
+.app-container.night-mode .header,
+.app-container.night-mode .footer-basic,
+.app-container.night-mode .content,
+.app-container.night-mode .Cateogories-div,
+.app-container.night-mode .card,
+.app-container.night-mode .home-image,
+.app-container.night-mode .about-image,
+.app-container.night-mode .course,
+.app-container.night-mode .Explore,
+.app-container.night-mode #backToTopBtn,
+.app-container.night-mode .login-tem input,
+.app-container.night-mode input,
+select,
+textarea,
+.app-container.night-mode .blog-details,
+.app-container.night-mode .btn,
+.app-container.night-mode .search-button,
+.app-container.night-mode .sub-line a,
+.app-container.night-mode .navbar,
+.app-container.night-mode .navbar a 
+ {
+  background-color: inherit;
+  color: inherit;
+  border-color: inherit;
+}
+
+.app-container.night-mode #backToTopBtn,
+.app-container.night-mode .Explore,
+.app-container.night-mode input,
+.app-container.night-mode .input:checked+.slider:before {
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--border-color);
+}

@@ -3,10 +3,13 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-} 
+}
 
 .blog-details {
-    background-color: aqua;
+    background-color: var(--primary-color);
+    -webkit-box-shadow: -2px 0px 12px -4px var(--shadow-color--2);
+    -moz-box-shadow: -2px 0px 12px -4px var(--shadow-color--2);
+    box-shadow: -2px 0px 12px -4px var(--shadow-color--2);
     margin: 1em;
     border-radius: 1em;
     padding: 1rem;

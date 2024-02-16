@@ -1,9 +1,9 @@
 .footer-basic {
     padding-top: 60px;
     padding-bottom: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 0px 0px 1px var(--border-color);
 }
 
 .footer-basic ul {
@@ -42,7 +42,7 @@
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid  var(--border-color);
     margin: 0 8px;
     color: inherit;
     opacity: 0.75;
@@ -50,7 +50,7 @@
 
 
 .social a:nth-child():hover{
-    background-color: #ffffff;
+    background-color: var(--primary-color);
 }
 
 .social a:nth-child(1):hover {
@@ -58,7 +58,7 @@
 }
 
 .social a:nth-child(2):hover {
-    color: aqua;
+    color: rgba(94, 241, 241, 0.852);
 }
 .social a:nth-child(3):hover {
     color: blue;
@@ -71,7 +71,7 @@
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: #aaa;
+    color: var(--border-color);
     margin-bottom: 0;
 }
 
@@ -87,13 +87,10 @@
     z-index: 99;
     cursor: pointer;
     padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 10px;
-}
-
-#backToTopBtn :hover {
-    color: #000000;
+    
 }
 
 #backToTopBtn i {

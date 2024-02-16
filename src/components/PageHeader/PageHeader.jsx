@@ -1,13 +1,20 @@
 // PageHeader.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const PageHeader = ({ title, paragraph, buttonText, className  }) => {
+const PageHeader = ({ title, paragraph, buttonText, buttonLink, className }) => {
     return (
+        <>
         <div className={`home ${className}`}>
             <h1>{title}</h1>
             <p className="typing-animation">{paragraph}</p>
-            <button className='Explore'>{buttonText}</button>
+            {buttonText && buttonLink && (
+                <Link to={buttonLink}>
+                    <button className='Explore'>{buttonText}</button>
+                </Link>
+            )}
         </div>
+        </>
     );
 };
 

@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realistic Sun with Smaller Edges</title>
+<style>
+    .sun {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+    }
 
+    .sun::before {
+        content: '';
+        position: absolute;
+        top: -20px; /* Adjusted to make the edges smaller */
+        left: -20px; /* Adjusted to make the edges smaller */
+        width: 240px; /* Adjusted to make the edges smaller */
+        height: 240px; /* Adjusted to make the edges smaller */
+        border-radius: 50%;
+        background: radial-gradient(circle at center, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 0, 0) 70%);
+    }
+
+    .sun::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle at center, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 0, 0) 70%);
+    }
+</style>
+</head>
+<body>
+    <div class="sun"></div>
+</body>
+</html>

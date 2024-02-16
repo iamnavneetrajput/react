@@ -3,6 +3,7 @@ import { Course } from '../../pages/Data'
 import PageHeader from "../PageHeader/PageHeader";
 import PageTitles from "../../pages/PageTitles";
 import './course.css'
+import Topcourses from "../TopCourses/Topcourses";
 
 const Courses = () => {
 
@@ -12,10 +13,12 @@ const Courses = () => {
                 <PageHeader
                     title="Welcome To Courses "
                     paragraph="This Line Contains about COurse"
-                    buttonText=" View Tranding Courses "
+                    buttonText="Explore"
+                    buttonLink="/blog"
                     className='home-image'
                 />
                 <div className="course-card">
+                <h3>List Of Courses We Provided</h3>
                     <div className="course-list">
                         {Course.map(course => (
                             <a key={course.id} href={course.link}>
@@ -28,6 +31,7 @@ const Courses = () => {
                         ))}
                     </div>
                 </div>
+                <Topcourses/>
             </div>
         </>
     )

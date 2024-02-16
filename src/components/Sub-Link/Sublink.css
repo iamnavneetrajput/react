@@ -1,0 +1,32 @@
+.sub-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.sub-line a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.sub-line a:hover {
+    color: rgb(66, 217, 255);
+    text-decoration: underline;
+}
+
+.sub-line ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub-line li {
+    margin: 0 10px;
+
+}
+@media (max-width: 530px){
+    .sub-line li {
+        margin: 0 5px;
+        font-size:  12px;
+    }
+}

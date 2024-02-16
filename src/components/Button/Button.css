@@ -1,0 +1,11 @@
+.btn{
+    width: 7rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}

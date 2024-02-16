@@ -1,34 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
-
-:root {
-    --primary-color: #ffffff;
-    --secondary-color: #1e1e1e;
-    --shadow-color--1: rgba(0, 0, 0, 0.1);
-    --button-color: #007bff;
-    --sucess-color: #4caf50;
-    --error-color: #ff0000;
-    --border-color: #a8a8a8;
-    --hover-color: #dbdbdb86;
-    --hover-color--2: #007bffed;
-}
-
 * {
     box-sizing: border-box;
 }
 
 .main {
-    margin-top: 40px;
+    margin-top: 90px;
     flex-grow: 1;
     margin-bottom: 40px;
 }
 
 .home {
-    /* min-height: 300px; */
-    /* background-image: url('../images/canva.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +24,8 @@
     background-image: url('../images/canva.jpg');
 }
 
-.about-image {
-    background-image: url('../images/background_1.jpg');
+.home-image1 {
+    background-image: url('../images/teachersday.jpg');
 }
 
 .home h1,
@@ -52,11 +37,11 @@ p {
 .Explore {
     height: 30px;
     width: 160px;
-    /* color: white; */
     border-radius: 8px;
     font-family: "Protest Riot", sans-serif;
     font-weight: 900;
     font-style: normal;
+    color: var(--secondary-color);
     background: transparent;
     border-color: var(--secondary-color);
     border-style: double;
@@ -73,7 +58,6 @@ p {
 .swiper-container {
     width: 100%;
     padding: 20px;
-    /* background-color: #252525; */
 }
 
 .swiper-container h3 {
@@ -92,7 +76,7 @@ p {
 .card {
     background-color: var(--primary-color);
     border-radius: 10px;
-    box-shadow: 0 4px 6px var(--shadow-color--1);
+    box-shadow: -1px 0px 6px -2px var(--shadow-color--2);
     padding: 20px;
     text-align: center;
     height: 100%;
@@ -107,24 +91,22 @@ p {
 .card h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: var(--secondary-color);
 }
 
 .card p {
     font-size: 16px;
-    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
 .button {
     height: 40px;
-    width: 200px;
+    width: 180px;
     display: inline-block;
     background-color: var(--button-color);
     color: var(--primary-color);
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px;
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
@@ -149,10 +131,10 @@ p {
 
 .form form {
     max-width: 600px;
-    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 

@@ -1,0 +1,53 @@
+.newsmain{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.news-title {
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter {
+    margin: 10px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input {
+    width: 300px;
+    outline: 1px solid var( --secondary-color);
+    margin: 4px;
+}
+
+.button-sub {
+    width: 2rem;
+    height: 2.3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    outline: 1px solid var( --secondary-color);
+    background-color: var(--button-color);
+    color: var(--primary-color);
+}
+
+.newsletter input:hover {
+    outline-offset: 1px;
+}
+
+@media (max-width: 440px) {
+    .newsletter input{
+        width: 200px;
+    }
+}
+@media (max-width: 340px) {
+    .newsletter input{
+        width: 145px;
+    }
+    .button-sub{
+        width: 1.6rem;
+    }
+}

@@ -1,3 +1,49 @@
+
+const coursesData = [
+  { name: "Course 1", Description: "Description 1", buttonText: "Button 1", link: "Link 1" },
+  { name: "Course 2", Description: "Description 2", buttonText: "Button 2", link: "Link 2" },
+];
+export const Courseslist =[
+    {
+        id: 1,
+        name: "JavaScript",
+        Description: "This is a course about the basics of JavaScript",
+        buttonText: "Enroll Now",
+        link: "#"
+    },
+
+    {
+        id: 2,
+        name: "ReactJS",
+        Description: "This is a course about the basics of React",
+        buttonText: "Enroll Now",
+        link: "#"
+    },
+
+    {
+        id: 2,
+        name: "ReactJS",
+        Description: "This is a course about the basics of React",
+        buttonText: "Enroll Now",
+        link: "#"
+    },
+
+    {
+        id: 2,
+        name: "ReactJS",
+        Description: "This is a course about the basics of React",
+        buttonText: "Enroll Now",
+        link: "#"
+    },
+
+    {
+        id: 2,
+        name: "ReactJS",
+        Description: "This is a course about the basics of React",
+        buttonText: "Enroll Now",
+        link: "#"
+    },
+]
 export const Course = [
     {
         id: 1,
@@ -60,22 +106,27 @@ export const PricingData = [
     {
         id: 1,
         name: "Free",
-        description: "No Features and Free Courses",
+        description: "Limited features",
+        price: "$0/month",
+        features: ["Access to free courses"," Limited Notes"],
         buttonText: "Subscribe",
-        ImageUrl: "./images/canva.jpg",
         buttonLink: "#"
     },
     {
         id: 2,
         name: "Basic",
-        description: "Basic Features and Basic Courses",
+        description: "All features + additional features",
+        price: "$9.99/month",
+        features: ["All features in Pro"," Dedicated Support"],
         buttonText: "Subscribe",
         buttonLink: "#"
     },
     {
         id: 3,
         name: "Premium",
-        description: "All Features and All Courses",
+        description: "Everything in Basic plus...",
+        price: "$29.99/month",
+        features: ["All features"," Custom Builds"," Advanced Support"],
         buttonText: "Subscribe",
         buttonLink: "#"
     }

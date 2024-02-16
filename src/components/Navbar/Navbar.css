@@ -1,24 +1,32 @@
 /* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
 .navbar {
+  font-family: "Protest Riot", sans-serif;
   box-shadow: 0px 1px rgb(31, 30, 30);
   justify-content: space-between;
-  background-color: #000000;
+  background-color: var(--secondary-color);
   align-items: center;
   padding: 10px 20px;
   position: fixed;
-  color: #fff;
+  color: var(--primary-color);
   display: flex;
   z-index: 100;
-  height: 60px;
+  height: 50px;
   right: 0;
   left: 0;
   top: 0;
 }
 
-a {
-  color: white;
+.navbar a {
+  color: var(--primary-color);
   text-decoration: none;
+}
+
+.navbar a:hover {
+  color: aqua;
+  text-decoration: underline;
+  transition: .4s ease-in-out;
 }
 
 .logo {
@@ -47,9 +55,10 @@ a {
   cursor: pointer;
 }
 
-.user{
+.user {
   list-style: none;
 }
+
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: flex;
@@ -58,25 +67,29 @@ a {
   .menu {
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
-    background-color: #272727;
+    background-color: var(--menu-color);
     display: none;
-    animation: slideInOut 0.5s ease; 
+    animation: slideInOut 0.5s ease;
   }
 
   .menu.open {
     display: flex;
+    height: 50px;
+    justify-content: center;
+  
   }
 
   .menu.closed {
     display: none;
-    animation: slideOut 1s ease; 
+    animation: slideOut 1s ease;
   }
 
   .menu li {
     text-align: center;
+    flex: 1;
   }
 
   .user {
@@ -88,6 +101,7 @@ a {
     from {
       transform: translateY(-100%);
     }
+
     to {
       transform: translateY(0);
     }
@@ -97,13 +111,15 @@ a {
     from {
       transform: translateY(0);
     }
+
     to {
       transform: translateY(-100%);
     }
   }
 }
+
 @media screen and (max-width: 440px) {
-  span {
+  .nav-text {
     display: none;
   }
 }

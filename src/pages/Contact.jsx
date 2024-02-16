@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './page.css';
+import PageHeader from '../components/PageHeader/PageHeader';
 
 const ContactForm = () => {
   // State to manage form values
@@ -51,6 +52,7 @@ const ContactForm = () => {
   };
 
   return (
+    <div className="main">
     <div className="form">
       <form id="contactForm" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -113,6 +115,7 @@ const ContactForm = () => {
           {responseMessage && <p>{responseMessage}</p>}
         </div>
       </form>
+    </div>
     </div>
   
   );
